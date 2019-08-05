@@ -34,6 +34,7 @@
           :router='true'
           :default-active='handleUrlPath()'
         >
+<<<<<<< HEAD
           <el-submenu
             :index="item1.id+''"
             v-for='item1 in menusData'
@@ -50,6 +51,9 @@
             >{{item2.authName }}</el-menu-item>
           </el-submenu>
           <!-- <el-submenu index="1">
+=======
+          <el-submenu index="1">
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
             <template slot="title">
               <i class="el-icon-user"></i>
               <span>用户管理</span>
@@ -90,7 +94,11 @@
               <span>数据管理</span>
             </template>
             <el-menu-item index="1-2">数据报表</el-menu-item>
+<<<<<<< HEAD
           </el-submenu> -->
+=======
+          </el-submenu>
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
         </el-menu>
       </el-aside>
 
@@ -106,6 +114,7 @@
 export default {
   data () {
     return {
+<<<<<<< HEAD
       menusData: {
         authName: '',
         order: ''
@@ -115,6 +124,11 @@ export default {
   created () {
     this.loadMenusData()
   },
+=======
+
+    }
+  },
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
   methods: {
     // 退出登录
     logout () {
@@ -142,6 +156,7 @@ export default {
     handleUrlPath () {
       // 锁定选定背景色
       // console.log(this.$route)
+<<<<<<< HEAD
       if (this.$route.path === '/goods-add') {
         return '/goods'
       }
@@ -155,6 +170,9 @@ export default {
       let res = await this.$axios.get('menus')
       // console.log(res)
       this.menusData = res.data.data
+=======
+      return this.$route.path
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
     }
   }
 }

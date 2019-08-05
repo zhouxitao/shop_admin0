@@ -43,6 +43,7 @@ export default {
         }]
       },
       // 默认打开开关
+<<<<<<< HEAD
       value1: true,
 
       // 显示编辑用户对话框==============
@@ -76,6 +77,13 @@ export default {
 
     this.getUsersData(page)
     this.loadRightData()
+=======
+      value1: true
+    }
+  },
+  created () {
+    this.getUsersData(1)
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
   },
   methods: {
     // 获取所有用户信息
@@ -106,8 +114,11 @@ export default {
     currentChange (curPage) {
       // console.log(curPage)
       this.getUsersData(curPage, this.input3)
+<<<<<<< HEAD
       this.$router.push('/users/' + curPage)
       console.log(this.$route)
+=======
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
     },
     // 点击搜索框
     search () {
@@ -190,6 +201,7 @@ export default {
           })
         }
       })
+<<<<<<< HEAD
     },
     // 显示---编辑用户---对话框====================
     showEditUserDialog (row) {
@@ -267,6 +279,8 @@ export default {
         })
         this.getUsersData(this.pagenum, this.input3)
       }
+=======
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
     }
   }
 }

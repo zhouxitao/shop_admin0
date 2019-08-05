@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 import './assets/common.css'
 // 引入其他模块
 import login from './components/login/login.vue'
+<<<<<<< HEAD
 
 // 引入element
 import ElementUi from 'element-ui'
@@ -17,6 +18,16 @@ const roles = () => import('./components/roles/roles.vue')
 const Categories = () => import('./components/categories/Categories.vue')
 const Goods = () => import('./components/goods/Goods.vue')
 const GoodsAdd = () => import('./components/goods/GoodsAdd.vue')
+=======
+import home from './components/home/home.vue'
+import users from './components/users/users.vue'
+import rights from './components/rights/rights.vue'
+import roles from './components/roles/roles.vue'
+
+// 引入element
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 // 安装路由功能
 Vue.use(VueRouter)
 Vue.use(ElementUi)
@@ -28,12 +39,18 @@ const router = new VueRouter({
       path: '/home',
       component: home,
       children: [
+<<<<<<< HEAD
         { path: '/users/:page?', component: users },
         { path: '/rights', component: rights },
         { path: '/roles', component: roles },
         { path: '/categories', component: Categories },
         { path: '/goods', component: Goods },
         { path: '/goods-add', component: GoodsAdd }
+=======
+        { path: '/users', component: users },
+        { path: '/rights', component: rights },
+        { path: '/roles', component: roles }
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
       ]
     }
 

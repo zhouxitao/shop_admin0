@@ -10,6 +10,7 @@ Vue.prototype.$axios = axios
 
 // 设置默认全局基准地址
 axios.defaults.baseURL = 'http://localhost:8888/api/private/v1/'
+<<<<<<< HEAD
 // axios.defaults.headers.common['Authorization'] = localStorage.getItem('token')
 Vue.config.productionTip = false
 
@@ -24,6 +25,10 @@ axios.interceptors.request.use(
     // Do something with request error
     return Promise.reject(error)
   })
+=======
+
+Vue.config.productionTip = false
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 new Vue({
   router,
   render: h => h(App)

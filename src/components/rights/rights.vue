@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <!-- 面包屑 -->
     <el-breadcrumb separator-class="el-icon-arrow-right">
@@ -41,10 +42,14 @@
       </el-table-column>
     </el-table>
   </div>
+=======
+  <div>rights</div>
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   data () {
     return {
       rightsData: [{
@@ -81,4 +86,11 @@ export default {
   line-height: 40px;
   padding-left: 20px;
 }
+=======
+
+}
+</script>
+
+<style>
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 </style>

@@ -53,7 +53,10 @@
           size="mini"
           plain
           icon="el-icon-edit"
+<<<<<<< HEAD
           @click="showEditUserDialog(scope.row)"
+=======
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
         ></el-button>
         <el-button
           type="danger"
@@ -62,12 +65,16 @@
           icon="el-icon-delete"
           @click="delUser(scope.row.id)"
         ></el-button>
+<<<<<<< HEAD
         <el-button
           @click="showAssignRightDialog(scope.row)"
           type="success"
           size="mini"
           plain
           icon="el-icon-check"
+=======
+        <el-button type="success" size="mini" plain icon="el-icon-check"
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
           >分配角色</el-button
         >
       </template>
@@ -85,7 +92,11 @@
   >
   </el-pagination>
 
+<<<<<<< HEAD
   <!-- 添加用户对话框 -->
+=======
+  <!-- 对话框 -->
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
   <el-dialog
     @closed="closeDialog"
     title="添加用户"
@@ -115,6 +126,7 @@
       <el-button type="primary" @click="addUser">确 定</el-button>
     </div>
   </el-dialog>
+<<<<<<< HEAD
 
   <!-- 修改状态对话框 -->
   <el-dialog title="编辑用户" :visible.sync="dialogEditUserFormVisible">
@@ -161,4 +173,6 @@
       <el-button type="primary" @click="assignRole">确 定</el-button>
     </div>
   </el-dialog>
+=======
+>>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 </div>
