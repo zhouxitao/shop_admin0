@@ -1,0 +1,10 @@
+.row1 {
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 10px;
+}
+.row1 .row2 {
+  margin-bottom: 10px;
+}
+.row1 .row2 .row3 {
+  margin-right: 5px;
+}
