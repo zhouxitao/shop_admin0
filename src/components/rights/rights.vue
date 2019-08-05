@@ -45,7 +45,6 @@
 
 <script>
 export default {
-<<<<<<< HEAD
   data () {
     return {
       rightsData: [{
@@ -82,11 +81,4 @@ export default {
   line-height: 40px;
   padding-left: 20px;
 }
-=======
-
-}
-</script>
-
-<style>
->>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 </style>
