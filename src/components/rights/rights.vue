@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div>
     <!-- 面包屑 -->
     <el-breadcrumb separator-class="el-icon-arrow-right">
@@ -42,9 +41,6 @@
       </el-table-column>
     </el-table>
   </div>
-=======
-  <div>rights</div>
->>>>>>> be99e3889f7062001f88c9e1dc597a78c70a3261
 </template>
 
 <script>
